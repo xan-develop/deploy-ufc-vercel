@@ -1,0 +1,122 @@
+html{
+  background-color: #000000 !important;
+
+}
+nav{
+  background-color: azure !important;
+}
+#nav-fondo{
+  background-color: #efefef !important;
+}
+#icon-class{
+  background-color: #ffffff !important;
+  margin-top: 10px;
+}
+.menu-enlaces:hover {
+  background-color: #ee3030 !important;
+}
+a:hover{
+  color: #ffffff !important;
+}
+/* Estilo general del contenedor del formulario */
+#sugerencias {
+  margin: 50px auto;
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid #ee3030;
+  background-color: #e7e7e7;
+  padding: 20px;
+}
+
+/* Estilo de las etiquetas */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  font-weight: 900;
+  animation: fadeIn 0.3s ease-in-out; /* Asigna la animación */
+}
+
+/* Estilo de los inputs y select */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+#lista{
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+/* Estilo del botón */
+input[type="submit"] {
+  background-color: #ee3030;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo del botón al pasar el ratón por encima */
+input[type="submit"]:hover {
+  background-color: #ff4444;
+}
+#largo {
+  height: 150px; /* Ajustamos la altura */
+}
+#formulario{
+  font-size: 17px;
+}
+.sug-btn {
+  background-color: #ee3030;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: end;
+  align-content: end;
+  justify-content: flex-end;
+}
+
+.sug-btn:hover {
+  background-color: #211f1f;
+}
+@media (max-width: 1300px) {
+  #sugerencias {
+    width: 60%;
+  }
+
+}
+@media (max-width: 600px) {
+  #sugerencias {
+    width: 80%;
+  }
+
+}

@@ -1,0 +1,271 @@
+#container{
+  margin-top: 50px;
+  border: 1px solid bisque;
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.918);
+  margin-bottom: 30px;
+}
+
+#pais img{
+  width: 10%;
+  margin-left: 30px;
+}
+#info{
+
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  color: rgb(224, 224, 224);
+  font-size: 50px !important;
+  height: 90%;
+}
+.stats{
+
+  height: 30%;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+}
+.numeros {
+  border-left: 1px solid rgb(255, 42, 42);
+  border-right: 1px solid rgb(231, 59, 59);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center !important;
+}
+
+.title-stat{
+  text-align: center !important;
+  font-size: 27px !important;
+  margin-right: 10px;
+}
+.num-stat{
+  font-size: 45px !important;
+}
+#info p{
+margin-left: 40px;
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+margin-top: 10px;
+text-shadow: 0px 4px 4px rgba(187, 159, 86, 0.41);
+
+}
+#historial{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: end;
+  text-align: center;
+  margin-right: 90px;
+}
+#title{
+  color: aliceblue;
+
+margin-right: 30px;
+margin-bottom: 30px;
+font-family: 'Public Sans';
+font-style: italic;
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+color: #e7e7e7;
+text-shadow: 0px 4px 4px rgba(187, 159, 86, 0.41);
+
+}
+#combate{
+  background-color: rgb(70, 70, 70);
+  width: 60%;
+  height: 50%;
+  margin-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+  grid-template-rows: 2fr 1fr;
+  transition: 0.5s;
+}
+#combate:hover{
+  transform: scale(1.1);
+}
+#foto{
+  position: relative;
+  align-items: end;
+  justify-content: end;
+
+  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+
+}
+#imagen-luchador{
+  width: 60%;
+  margin-top: 10px;
+  margin-left: 90px;
+  position:absolute;
+  bottom: 0;
+}
+.transparent-img {
+  opacity: 0.5; /* Cambia este valor para ajustar la transparencia */
+}
+
+#img-combate{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  overflow: hidden;
+  background-color: #b9b9b9;
+}
+#img-combate img{
+  width: 120%;
+}
+#info-combate , #link{
+  text-align: center;
+  margin-top: 10px;
+}
+#link{
+  color: #e7e7e7;
+text-shadow: 0px 4px 4px rgba(187, 159, 86, 0.41);
+transition: 0.5s;
+}
+#link:hover{
+  color: #eedc38;
+}
+#info-combate span{
+  margin-top: 10px;
+}
+#ultimoscombates{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  width: 70%;
+  margin: auto;
+  gap: 30px;
+}
+.listacombates {
+
+  height: 300px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  gap: 10px;
+  box-shadow: 4px 5px 5px rgba(179, 147, 33, 0.41);
+  background-color: #f4f4f4;
+  transition: 0.5s;
+}
+.listacombates:hover{
+  transform: scale(1.1);
+}
+
+#fotolista1, #fotolista2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fotohistorial {
+  width: 100%;
+}
+
+#listamedio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#listamedio img {
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  #container{
+    grid-template-columns: repeat(2 , 2fr);
+    height: 900px;
+  }
+  #ultimoscombates{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .title-stat{
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  .num-stat{
+    font-size: 40px !important;
+  }
+  #info p{
+    font-size: 15px;
+margin-top: 0;
+flex-direction: row;
+    }
+}
+@media (max-width: 700px) {
+  #container{
+    grid-template-columns: repeat(1 , 2fr);
+    height: 900px;
+  }
+  #ultimoscombates{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .title-stat{
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  #imagen-luchador{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 90px;
+    position:relative;
+    bottom: 0;
+  }
+  .num-stat{
+    font-size: 40px !important;
+  }
+  #info p{
+    font-size: 15px;
+margin-top: 0;
+
+white-space: nowrap;
+    }
+}
+@media (max-width: 450px) {
+  #container{
+    grid-template-columns: repeat(1 , 2fr);
+    height: 900px;
+  }
+  #ultimoscombates{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .title-stat{
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  .num-stat{
+    font-size: 40px !important;
+  }
+  #info p{
+    font-size: 10px;
+    margin-left: 5px;
+margin-top: 0;
+flex-direction: row;
+flex-wrap: wrap;
+white-space: nowrap;
+    }
+    #info{
+    
+    }
+    .title-stat , .num-stat{
+      font-size: 15px !important;
+    }
+}
+a{
+  font-weight: 700;
+  color: black;
+}

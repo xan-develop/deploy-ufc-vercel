@@ -1,0 +1,7 @@
+
+#menu-toggle:checked ~ #dropdown-menu {
+    display: block;
+}
+a{
+    color: white;
+}

@@ -1,0 +1,22 @@
+<h1 style="text-align: center;">Sugerencias</h1>
+<section id="suggest">
+  <div id="sugerencia" *ngFor="let sug of data">
+<p>ID : {{sug.id}}</p>
+<p>Usuario : {{sug.usuario}}</p>
+<p>Correo : {{sug.correo}}</p>
+<p>Evento : {{sug.evento}}</p>
+<p>Luchadores</p>
+<ul>
+  <li class="ml-8 mt-2 text-zinc-800" *ngFor="let luchador of sug.peleas; let i = index">
+    <ng-container *ngIf="sug.peleas2 && sug.peleas2.length > i; else noSecondFighters">
+      {{ luchador }} vs {{ sug.peleas2[i] }}
+    </ng-container>
+    <ng-template #noSecondFighters>
+      {{ luchador }}
+    </ng-template>
+  </li>
+</ul>
+<p>Descripcion : </p>
+<p>{{sug.descripcion}}</p>
+  </div>
+</section>
